@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 
@@ -85,32 +85,19 @@ class Sepetim extends StatelessWidget {
           ),
         ],
       ),
-      SizedBox(height: 30.0),
-      Material(
-        color: Colors.white,
-        child: InkWell(
-          splashColor: Colors.red[100],
-          highlightColor: Colors.red[50],
-          onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Container(
-              height: 47.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Colors.red[400],
-              ),
-              child: Center(
-                child: Text(
-                  "Alışverişi Tamamla",
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
+      SizedBox(height: 32.0),
+      Padding(
+        padding: const EdgeInsets.only(right: 20.0, left: 20.0, bottom: 20.0),
+        child: ElevatedButton(
+          onPressed: () {},
+          child: Text(
+            "Alışverişi Tamamla",
+            style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500),
+          ),
+          style: ElevatedButton.styleFrom(
+            fixedSize: Size(100, 50),
+            backgroundColor: Colors.red[400],
+            foregroundColor: Colors.white,
           ),
         ),
       ),
